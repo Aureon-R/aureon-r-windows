@@ -7,7 +7,7 @@
 
 <p align="center"><a href="https://github.com/Aureon-R/aureon-r-client">Android version</a> · <strong>Windows version</strong></p>
 
-<p align="center"><strong><a href="https://github.com/Aureon-R/aureon-r-windows/releases/latest">Download latest Windows EXE (v0.1.31)</a></strong> · <a href="https://aureonvpn.com/en/aureon-r">Official website</a></p>
+<p align="center"><strong><a href="https://github.com/Aureon-R/aureon-r-windows/releases/latest">Download latest Windows EXE (v0.1.35)</a></strong> · <a href="https://aureonvpn.com/en/aureon-r">Official website</a></p>
 
 Aureon R is an independent proxy client that supports importing your own nodes and self-hosted VPS deployment. No official proxy nodes are provided.
 
@@ -45,16 +45,19 @@ Actual connected Windows interface (Chinese UI; private connection information m
 
 Manage several Debian VPS instances under one account. Each server has its own Docker deployment and DNS settings and can host up to eight supported protocols. For example, three VPS instances in the US, Japan and Germany can host eight nodes each (24 nodes in total). To add another VPS, enter its own IP address and SSH credentials and deploy. Existing servers and their nodes remain unaffected. Manage, select and test all self-hosted nodes in the unified node list. Current local capacity is 20 saved VPS profiles and 100 total nodes (including imported, subscription and shared nodes), not a paid-plan quota.
 
-## What's new in v0.1.31
+## What's new in v0.1.35
 
 - One-click latency testing for all nodes, including all eight supported protocols; sort from lowest to highest latency, with failed tests last.
 - Test while the VPN is connected and strict network protection is active, without switching the current node.
 - Probes bind to the physical network interface; temporary WFP rules are automatically removed after testing.
 - TCP nodes use port-connect latency; UDP nodes use server ICMP round-trip latency, not UDP protocol handshake verification.
 
+- Automatic and manual update checks, in-app downloads with progress and SHA-256 verification.
+- Fixed update installation when the previous client was incorrectly detected as running. The independent update handoff waits for the old process to exit.
+
 ## Installation
 
-Supports Windows 10/11 x64, with the .NET runtime included. In-place upgrades are supported. Exit the previous version from the system tray before installing. The EXE is not Authenticode-signed; Windows may show an unknown-publisher warning. Verify the SHA-256 checksum before running it.
+Supports Windows 10/11 x64, with the .NET runtime included. In-place upgrades are supported. For a manual installation, exit the previous version from the system tray. In-app updates automatically shut down the client before starting installation. The EXE is not Authenticode-signed; Windows may show an unknown-publisher warning. Verify the SHA-256 checksum before running it.
 
 ---
 
