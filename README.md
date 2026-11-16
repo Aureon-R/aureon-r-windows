@@ -7,7 +7,7 @@
 
 <p align="center"><a href="https://github.com/Aureon-R/aureon-r-client">Android version</a> · <strong>Windows version</strong></p>
 
-<p align="center"><strong><a href="https://github.com/Aureon-R/aureon-r-windows/releases/latest">Download latest Windows EXE</a></strong> · <a href="https://aureonvpn.com/en/aureon-r">Official website</a></p>
+<p align="center"><strong><a href="https://github.com/Aureon-R/aureon-r-windows/releases/latest">Download latest Windows EXE (v0.1.31)</a></strong> · <a href="https://aureonvpn.com/en/aureon-r">Official website</a></p>
 
 Aureon R is an independent proxy client that supports importing your own nodes and self-hosted VPS deployment. No official proxy nodes are provided.
 
@@ -34,17 +34,18 @@ Actual connected Windows interface (Chinese UI; private connection information m
 - **Multi-protocol support:** Dual sing-box and Xray cores supporting VLESS Reality Vision, VMess TLS, Trojan TLS, Hysteria 1/2, TUIC v5, WireGuard and AnyTLS.
 - **Node management:** Import links, text, files, QR code images and subscriptions. Manage, update and switch nodes. No registration is required for ordinary node use.
 - **Routing & security:** Global proxy, application/domain/IP split routing, LAN bypass, strict mode, encrypted DNS (DoH) and leak protection.
-- **Connection monitoring:** Real-time traffic, node latency, IP-based country and region flags, and DNS resolution verification.
+- **Connection monitoring:** Real-time traffic, one-click latency testing and ascending sorting, IP-based country and region flags, and DNS resolution verification.
 - **Self-hosted deployment:** One-click Debian VPS deployment via SSH, automatic Docker and firewall configuration, and support for adding protocols, redeployment and removal.
 - **Node sharing:** Share nodes via QR codes and links, with independent guest credentials, guest management and access revocation. Sharing access requires approval.
 - **Backup & restore:** Encrypted backups and incremental restoration using the same account.
 - **Desktop experience:** Chinese and English interface, system tray, account management, private support messaging and update checks.
 
-## What's new in v0.1.28
+## What's new in v0.1.31
 
-- Improved leak protection and network recovery.
-- Added IP-based country and region flags for nodes and DNS.
-- Improved DNS resolution verification.
+- One-click latency testing for all nodes, including all eight supported protocols; sort from lowest to highest latency, with failed tests last.
+- Test while the VPN is connected and strict network protection is active, without switching the current node.
+- Probes bind to the physical network interface; temporary WFP rules are automatically removed after testing.
+- TCP nodes use port-connect latency; UDP nodes use server ICMP round-trip latency, not UDP protocol handshake verification.
 
 ## Installation
 
