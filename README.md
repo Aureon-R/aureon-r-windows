@@ -11,21 +11,23 @@
 
 Aureon R is an independent proxy client that supports importing your own nodes and self-hosted VPS deployment. No official proxy nodes are provided.
 
-## Screenshots
+## App screenshots
 
-Actual Windows 0.1.28 connection (Chinese UI; local connection details masked):
+Windows v0.1.28 interface previews with example data. Select an image to view it at full size.
 
-<img src="home-live-zh.png" width="340" alt="Live connection and verified DNS">
+<table>
+<tr>
+<td align="center"><a href="home-en.png"><img src="home-en.png" width="190" alt="Connection"></a><br><strong>Connection</strong></td>
+<td align="center"><a href="nodes-en.png"><img src="nodes-en.png" width="190" alt="Node management"></a><br><strong>Node management</strong></td>
+<td align="center"><a href="deploy-en.png"><img src="deploy-en.png" width="190" alt="One-click VPS deployment"></a><br><strong>One-click VPS deployment</strong></td>
+<td align="center"><a href="settings-en.png"><img src="settings-en.png" width="190" alt="Settings and import"></a><br><strong>Settings and import</strong></td>
+</tr>
+</table>
 
-English interface previews rendered from version 0.1.28 using test data:
+Actual connected Windows interface (Chinese UI; private connection information masked):
 
-| Home | Nodes |
-| :---: | :---: |
-| <img src="home-en.png" width="300" alt="Home"> | <img src="nodes-en.png" width="300" alt="Node management"> |
+<a href="home-live-zh.png"><img src="home-live-zh.png" width="190" alt="Verified DNS and live connection"></a>
 
-| Self-hosted deployment | Settings |
-| :---: | :---: |
-| <img src="deploy-en.png" width="300" alt="VPS deployment"> | <img src="settings-en.png" width="300" alt="Routing and security settings"> |
 
 ## Key Features
 

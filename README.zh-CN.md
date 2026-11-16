@@ -11,19 +11,19 @@
 
 Aureon R 是独立代理客户端，支持用户自行导入节点及 VPS 自托管部署，不提供官方代理节点。
 
-## 界面介绍
+## APP 界面展示
 
-实际运行 Windows 0.1.28 的连接首页和设置页（本地连接信息已遮盖）：
+首页与设置页为 Windows v0.1.28 实际运行截图，已遮盖私人连接信息；节点与部署页使用同版本示例数据展示。点击图片可查看原尺寸。
 
-| 连接首页 | 设置 |
-| :---: | :---: |
-| <img src="home-live-zh.png" width="300" alt="连接首页与 DNS 验证"> | <img src="settings-live-zh.png" width="300" alt="设置及节点导入"> |
+<table>
+<tr>
+<td align="center"><a href="home-live-zh.png"><img src="home-live-zh.png" width="190" alt="连接首页"></a><br><strong>连接首页</strong></td>
+<td align="center"><a href="nodes-zh.png"><img src="nodes-zh.png" width="190" alt="节点管理"></a><br><strong>节点管理</strong></td>
+<td align="center"><a href="deploy-zh.png"><img src="deploy-zh.png" width="190" alt="VPS 一键部署"></a><br><strong>VPS 一键部署</strong></td>
+<td align="center"><a href="settings-live-zh.png"><img src="settings-live-zh.png" width="190" alt="设置与导入"></a><br><strong>设置与导入</strong></td>
+</tr>
+</table>
 
-以下为同版本使用示例数据生成的界面预览：
-
-| 节点管理 | 自托管部署 |
-| :---: | :---: |
-| <img src="nodes-zh.png" width="300" alt="节点列表"> | <img src="deploy-zh.png" width="300" alt="自托管部署"> |
 
 ## 主要功能
 
