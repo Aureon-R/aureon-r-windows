@@ -36,9 +36,14 @@ Actual connected Windows interface (Chinese UI; private connection information m
 - **Routing & security:** Global proxy, application/domain/IP split routing, LAN bypass, strict mode, encrypted DNS (DoH) and leak protection.
 - **Connection monitoring:** Real-time traffic, one-click latency testing and ascending sorting, IP-based country and region flags, and DNS resolution verification.
 - **Self-hosted deployment:** One-click Debian VPS deployment via SSH, automatic Docker and firewall configuration, and support for adding protocols, redeployment and removal.
+- **Multiple VPS deployments:** Manage multiple independent VPS instances under one account, with up to eight supported protocols per server; adding servers preserves existing nodes.
 - **Node sharing:** Share nodes via QR codes and links, with independent guest credentials, guest management and access revocation. Sharing access requires approval.
 - **Backup & restore:** Encrypted backups and incremental restoration using the same account.
 - **Desktop experience:** Chinese and English interface, system tray, account management, private support messaging and update checks.
+
+## Multiple independent VPS deployments
+
+Manage several Debian VPS instances under one account. Each server has its own Docker deployment and DNS settings and can host up to eight supported protocols. For example, three VPS instances in the US, Japan and Germany can host eight nodes each (24 nodes in total). To add another VPS, enter its own IP address and SSH credentials and deploy. Existing servers and their nodes remain unaffected. Manage, select and test all self-hosted nodes in the unified node list. Current local capacity is 20 saved VPS profiles and 100 total nodes (including imported, subscription and shared nodes), not a paid-plan quota.
 
 ## What's new in v0.1.31
 
