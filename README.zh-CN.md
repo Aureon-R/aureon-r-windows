@@ -7,7 +7,7 @@
 
 <p align="center"><a href="https://github.com/Aureon-R/aureon-r-client/blob/main/README.zh-CN.md">Android 版</a> · <strong>Windows 版</strong></p>
 
-<p align="center"><strong><a href="https://github.com/Aureon-R/aureon-r-windows/releases/latest">下载最新版 Windows EXE</a></strong> · <a href="https://aureonvpn.com/aureon-r?lang=zh">中文官网</a></p>
+<p align="center"><strong><a href="https://github.com/Aureon-R/aureon-r-windows/releases/latest">下载最新版 Windows EXE（v0.1.31）</a></strong> · <a href="https://aureonvpn.com/aureon-r?lang=zh">中文官网</a></p>
 
 Aureon R 是独立代理客户端，支持用户自行导入节点及 VPS 自托管部署，不提供官方代理节点。
 
@@ -30,17 +30,18 @@ Aureon R 是独立代理客户端，支持用户自行导入节点及 VPS 自托
 - **多协议支持：** sing-box 与 Xray 双内核，支持 VLESS Reality Vision、VMess TLS、Trojan TLS、Hysteria 1/2、TUIC v5、WireGuard、AnyTLS。
 - **节点管理：** 支持链接、文本、文件、二维码图片及订阅导入，节点管理、更新与切换，普通节点使用无需注册。
 - **路由与安全：** 全局代理、应用/域名/IP 分流、局域网绕过、严格模式、DoH 加密 DNS 及防泄漏保护。
-- **连接监控：** 实时流量、节点延迟、IP 地区旗帜及 DNS 解析验证。
+- **连接监控：** 实时流量、全部节点一键测速、延迟排序、IP 地区旗帜及 DNS 解析验证。
 - **自托管部署：** SSH 一键部署 Debian VPS，自动配置 Docker 和防火墙，支持多协议追加、覆盖及删除部署。
 - **节点分享：** 支持二维码和链接分享、独立访客凭据、访客管理及权限撤销。分享权益需申请开通。
 - **备份与恢复：** 加密备份及同账号增量恢复。
 - **桌面体验：** 中英文界面、系统托盘、账户管理、私信客服及更新检查。
 
-## v0.1.28 更新内容
+## v0.1.31 更新内容
 
-- 完善防泄漏机制及网络恢复。
-- 新增节点与 DNS 的 IP 地区旗帜。
-- 完善 DNS 解析验证。
+- 支持全部八种协议节点一键测速，自动按延迟升序排列，测速失败的节点排在最后。
+- 修复 VPN 连接中、严格网络保护开启时无法测速的问题，无需断开 VPN 或切换当前节点。
+- 测速绑定物理网卡，临时 WFP 放行规则在测速结束后自动清除，保留原网络保护。
+- TCP 节点使用端口连接延迟，UDP 节点使用服务器 ICMP 延迟，不代表 UDP 协议握手成功。
 
 ## 安装说明
 
