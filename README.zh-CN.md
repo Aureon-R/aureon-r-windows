@@ -7,7 +7,7 @@
 
 <p align="center"><a href="https://github.com/Aureon-R/aureon-r-client/blob/main/README.zh-CN.md">Android 版</a> · <strong>Windows 版</strong></p>
 
-<p align="center"><strong><a href="https://github.com/Aureon-R/aureon-r-windows/releases/latest">下载最新版 Windows EXE（v0.1.31）</a></strong> · <a href="https://aureonvpn.com/aureon-r?lang=zh">中文官网</a></p>
+<p align="center"><strong><a href="https://github.com/Aureon-R/aureon-r-windows/releases/latest">下载最新版 Windows EXE（v0.1.35）</a></strong> · <a href="https://aureonvpn.com/aureon-r?lang=zh">中文官网</a></p>
 
 Aureon R 是独立代理客户端，支持用户自行导入节点及 VPS 自托管部署，不提供官方代理节点。
 
@@ -41,16 +41,19 @@ Aureon R 是独立代理客户端，支持用户自行导入节点及 VPS 自托
 
 同一账号可管理多台自己的 Debian VPS，每台 VPS 拥有独立的 Docker 部署及 DNS 设置，最多部署八种支持的协议。例如美国、日本、德国三台 VPS 各部署八种协议，共 24 个节点。添加新 VPS 时填写该服务器的 IP、SSH 用户名及密码并开始部署，原服务器及节点不受影响。所有自托管节点统一管理、选择和测速。当前客户端最多保存 20 台 VPS 和 100 个节点（含导入、订阅及分享节点），属于本地容量限制，并非付费套餐限制。
 
-## v0.1.31 更新内容
+## v0.1.35 更新内容
 
 - 支持全部八种协议节点一键测速，自动按延迟升序排列，测速失败的节点排在最后。
 - 修复 VPN 连接中、严格网络保护开启时无法测速的问题，无需断开 VPN 或切换当前节点。
 - 测速绑定物理网卡，临时 WFP 放行规则在测速结束后自动清除，保留原网络保护。
 - TCP 节点使用端口连接延迟，UDP 节点使用服务器 ICMP 延迟，不代表 UDP 协议握手成功。
 
+- 新增自动和手动检查更新、应用内下载进度及 SHA-256 完整性校验。
+- 修复应用内安装更新时错误提示旧程序未退出的问题；独立更新助手确认旧进程完全退出后再启动安装器。
+
 ## 安装说明
 
-支持 Windows 10/11 64 位，内置 .NET 运行环境。支持覆盖升级，安装前请从系统托盘退出旧版。安装包尚未进行 Authenticode 数字签名，Windows 可能显示未知发布者提示，运行前请核对 SHA-256。
+支持 Windows 10/11 64 位，内置 .NET 运行环境。支持覆盖升级，手动安装前请从系统托盘退出旧版；应用内更新会自动退出旧程序后启动安装。安装包尚未进行 Authenticode 数字签名，Windows 可能显示未知发布者提示，运行前请核对 SHA-256。
 
 ---
 
